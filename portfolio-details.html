@@ -150,13 +150,16 @@
                   </script>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/portfolio-5.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/7.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/2.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/portfolio-8.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/6.webp" alt="Portfolio Image" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/4.webp" alt="Portfolio Image" class="img-fluid">
                     </div>
                   </div>
                   <div class="swiper-button-prev"></div>
@@ -167,26 +170,26 @@
               <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="row g-2 mt-3">
                   <div class="col-3">
-                    <img src="assets/img/portfolio/portfolio-4.webp" alt="Gallery Image" class="img-fluid glightbox">
+                    <img src="assets/img/portfolio/1.webp" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
-                    <img src="assets/img/portfolio/portfolio-6.webp" alt="Gallery Image" class="img-fluid glightbox">
+                    <img src="assets/img/portfolio/3.webp" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
-                    <img src="assets/img/portfolio/portfolio-11.webp" alt="Gallery Image" class="img-fluid glightbox">
+                    <img src="assets/img/portfolio/5.webp" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
-                    <img src="assets/img/portfolio/portfolio-12.webp" alt="Gallery Image" class="img-fluid glightbox">
+                    <img src="assets/img/portfolio/8.webp" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                 </div>
               </div>
 
               <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
-                <span>Angular</span>
-                <span>Express.js</span>
-                <span>PostgreSQL</span>
-                <span>GraphQL</span>
-                <span>Firebase</span>
+                <span>YoloV5s</span>
+                <span>Augmentation</span>
+                <span>Detection</span>
+                <span>Ultralitycs</span>
+                <span>Hugging Face</span>
               </div>
             </div>
           </div>
@@ -195,7 +198,7 @@
             <div class="portfolio-details-content">
               <div class="project-meta">
                 <div class="badge-wrapper">
-                  <span class="project-badge">UX/UI Design</span>
+                  <span class="project-badge">Computer Vision</span>
                 </div>
                 <div class="date-client">
                   <div class="meta-item">
@@ -209,16 +212,16 @@
                 </div>
               </div>
 
-              <h2 class="project-title">Innovative Financial Dashboard App</h2>
+              <h2 class="project-title">Welcome to the Indonesian Road Damage Detection App</h2>
 
               <div class="project-website">
                 <i class="bi bi-link-45deg"></i>
-                <a href="#" target="_blank">projectwebsite.example.com</a>
+                <a href="https://huggingface.co/spaces/Yabunayya/Road-Damage-Detection" target="_blank">Road Damage Detection - Project App</a>
               </div>
 
               <div class="project-overview">
                 <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+                 An AI-powered application designed to detect and classify road damage in Indonesia. Leveraging the YOLOv5s model, the system accurately identifies 4 distinct types of distress: potholes, alligator cracking, corrugation, and raveling to optimize infrastructure maintenance.
                 </p>
 
                 <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
@@ -230,7 +233,23 @@
                     </h2>
                     <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                        <p>This project focuses on developing a road damage image detection system in Indonesia that classifies 4 main types of distress: potholes, alligator cracking, rutting/corrugation (wave), and raveling. The main challenges in field object detection are the limited availability of computing power (low-resource devices) and variations in environmental conditions (weather, lighting, and camera quality). To address these challenges, this project applies a lightweight model-based architectural modification approach optimized through advanced data augmentation techniques.</p>
+                        <p></p>
+                        <p><b>Why Use YOLOv5s?</b></p>
+                        <p>The selection of the YOLOv5s (Small) architecture is based on a well-considered trade-off between performance and efficiency:</p>
+                        <p>• <b>Advantages:</b> This model is highly lightweight, simple, and offers high inference speeds, making it ideal for deployment on devices with limited specifications (such as smartphones or embedded systems)..</p>
+                        <p>• <b>Limitations:</b> Due to its small size, the standard YOLOv5s has limited feature capacity, making it prone to performance drops in accuracy when faced with complex or sub-optimal road imagery.</p>
+                        <p><b>Dataset Management & Distribution</b></p>
+                        <p>he model was trained using an image dataset collected independently directly from the field to ensure alignment with the characteristics of Indonesian roads. A total of 492 images were collected and strictly partitioned with the following proportions:</p>
+                        <p>• <b>Training Dataset:</b> 353 images — used to train the model's feature recognition aspects.</p>
+                        <p>• <b>Validation Dataset:</b> 80 images — used to monitor performance during the training process and prevent overfitting..</p>
+                        <p>• <b>Testing Dataset:</b> 59 images — used as blind test data to evaluate the final performance of the mode</p>
+                        <p><b>Data Details per Class</b></p>
+                        <p> The total number of object annotations amounts to 1,089 instances, divided into four categories of road damage. After applying specialized augmentation techniques to the Jalan_Retak_Buaya (Alligator Cracking) class, the distribution is as follows:</p>
+                        <P>• <b>Jalan_Retak_Buaya (Alligator Cracking):</b> This class has the highest count, with 325 instances after the augmentation process was completed.</P>
+                        <p>• <b>Jalan_Bergelombang (Rutting/Corrugation):</b> This class ranks second with a total of 321 instances..</p>
+                        <p>• <b>Jalan_Raveling (Raveling):</b> This asphalt aggregate raveling damage class recorded 297 instances.</p>
+                        <p>• <b>Jalan_Berlubang (Potholes):</b> This class has the lowest count compared to the others, with 146 instances..</p>
                       </div>
                     </div>
                   </div>
@@ -243,7 +262,13 @@
                     </h2>
                     <div id="portfolio-details-collapse-2" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.</p>
+                        <p>Detecting these four types of road damage automatically through digital imagery carries its own complexities due to the visual characteristics of asphalt surfaces and dynamic field environment conditions, including:</p>
+                        <p><b>1. Visual Texture Similarity (Inter-Class Similarity):</b> Rough patterns in the Raveling class, advanced Alligator Cracking, and shallow Potholes look highly similar in 2D images, frequently triggering misclassifications.</p>
+                        <p><b>2. Limited Depth Information:</b> Standard cameras do not capture surface elevation contours, making Rutting/Corrugation damage difficult to identify without the aid of shadows or lane marking distortions.</p>
+                        <p><b>3. Lighting and Weather Interference:</b> Shadows from trees or vehicles are often misinterpreted as Potholes, while wet asphalt surfaces reflect light and mask the texture of Raveling.</p>
+                        <p><b>4. Overlapping Damage:</b> Multiple types of damage frequently co-occur in a single location—such as a pothole forming within an alligator cracking area—making it difficult to determine precise object boundaries (bounding boxes).</p>
+                        <p><b>5. Data Imbalance (Class Imbalance):</b> Significant discrepancies in sample sizes—both in classes with a minimum dataset (such as Potholes) and those with case-specific characteristics (such as Alligator Cracking)—potentially lower the model's detection sensitivity on minority classes.</p>
+                        <p><b>Limitations:</b> Due to its small size, the standard YOLOv5s has limited feature capacity, making it prone to performance drops in accuracy when faced with complex or sub-optimal road imagery</p>
                       </div>
                     </div>
                   </div>
@@ -255,8 +280,16 @@
                       </button>
                     </h2>
                     <div id="portfolio-details-collapse-3" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
-                      <div class="accordion-body">
-                        <p>Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                      <div class="accordion-body">                        
+                        <p>To surpass the baseline performance of YOLOv5s without increasing the model's computational load, the author modified the data pipeline. Instead of expanding the model architecture, the optimization focused on enriching data variation using a combination of the following augmentation techniques:</p>
+                        <p>• <b>Geometry & Spatial:</b> Horizontal Flip and Mosaic Augmentation (a built-in YOLOv5 feature to enrich the context of small objects).</p>
+                        <p>• <b>Lighting & Contrast:</b> Random Brightness Contrast, Hue Saturation Value (HSV), and CLAHE (Contrast Limited Adaptive Histogram Equalization) to address shadows and scorching weather conditions.</p>
+                        <p>• <b>Image Quality & Environmental Disturbance: </b>Sharpen, Gaussian Noise, Motion Blur (simulating camera movement), MedianBlur, ToGray, and Image Compression to simulate real-world camera degradation in the field. This experiment proves that a simple model, when equipped with the right augmentation strategy, can perform more optimally, robustly, and adaptively in real-world scenarios.</p>
+                        <p><p style="text-indent: 30px;"></p>To address the limited amount of data in the alligator cracking class, which consists of only 94 images, while simultaneously balancing the inter-class proportions (class balancing), the researcher applied data augmentation techniques using the Albumentations library. This augmentation process focused on two main aspects:</p>
+                        <p>• <b>Geometric Transformation:</b> Applying HorizontalFlip (p=0.5), VerticalFlip (p=0.5), RandomRotate90 (p=0.5), and ShiftScaleRotate (10% shift, 15% scale, maximum 15° rotation, with border reflect). This technique is safe to use because asphalt crack textures are invariant to changes in orientation.</p>
+                        <p>• <b>Color Adjustment:</b> Applying ToGray (p=0.2) to train the model to focus more on the crack texture patterns rather than the color variations of the asphalt surface.</p>
+                        <p> The combination of these methods aims to enrich the visual variation of the dataset, enabling the model to generalize more accurately.</p>
+                        <p></p>
                       </div>
                     </div>
                   </div>
@@ -284,7 +317,7 @@
               </div>
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="#" class="btn-view-project">View Live Project</a>
+                <a href="https://huggingface.co/spaces/Yabunayya/Road-Damage-Detection" class="btn-view-project">View Live Project</a>
                 <a href="#" class="btn-next-project">Next Project <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
