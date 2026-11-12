@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pneumothorax Detection with ResNet50 - Portfolio Details</title>
+  <meta name="description" content="Pneumothorax detection on chest X-rays with ResNet50: AUROC 0.938 on the SIIM-ACR test set, deployed in the browser with ONNX Runtime Web.">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Style
+  * Template URL: https://bootstrapmade.com/style-bootstrap-portfolio-template/
+  * Updated: Jul 02 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <!-- <h1 class="sitename">Style</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+        <div class="profile-img">
+          <img src="assets/img/profile/yabunayya.webp" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Yabunayya Habibi</h1>
+        </a>
+
+        <div class="social-links text-center">
+          <a href="https://x.com/YabunayyaH" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/share/1A33Qwk4ka/" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/yabunayyah?xtok=MTJna3o3bm93enB0Mg==" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="ttps://www.linkedin.com/in/yabunayya-habibi-086b30115/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="portfolio-details-media">
+              <div class="main-image">
+                <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 1000,
+                      "autoplay": {
+                        "delay": 6000
+                      },
+                      "effect": "creative",
+                      "creativeEffect": {
+                        "prev": {
+                          "shadow": true,
+                          "translate": [0, 0, -400]
+                        },
+                        "next": {
+                          "translate": ["100%", 0, 0]
+                        }
+                      },
+                      "slidesPerView": 1,
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      }
+                    }
+                  </script>
+                  <!-- TODO: ganti gambar di bawah dengan screenshot/gambar proyek pneumotoraks -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/pneu/pneu.webp" alt="#" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/pneu/pneu-2.webp" alt="#" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/pneu/pneu-3.webp" alt="#" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/pneu/pneu-4.webp" alt="#" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-2 mt-3">
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/pneu/pneu-5.webp" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/pneu/pneu-6.webp" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/pneu/pneu-7.webp" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/pneu/pneu-8.webp" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/pneu/pneu-9.webp" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/portfolio/pneu/pneu-10.webp" alt="Gallery Image" class="img-fluid glightbox">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                <span>ResNet50</span>
+                <span>Transfer Learning</span>
+                <span>PyTorch Lightning</span>
+                <span>Google Colab</span>
+                <span>ONNX Runtime Web</span>
+                <span>Hugging Face</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="portfolio-details-content">
+              <div class="project-meta">
+                <div class="badge-wrapper">
+                  <span class="project-badge">Medical Imaging</span>
+                </div>
+                <div class="date-client">
+                  <div class="meta-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>November 2026</span>
+                  </div>
+                  <div class="meta-item">
+                    <i class="bi bi-person-workspace"></i>
+                    <span>Personal Project</span>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="project-title">Pneumothorax Detection on Chest X-Rays with ResNet50</h2>
+
+              <div class="project-website">
+                <i class="bi bi-link-45deg"></i>
+                <a href="https://huggingface.co/spaces/Yabunayya/deteksi-pneumotoraks" target="_blank">Pneumothorax Detection - Project App</a>
+              </div>
+
+              <div class="project-overview">
+                <p class="lead">
+                  A binary classifier (normal vs. pneumothorax) for chest X-rays, deployed as a web application powered by ResNet50. Fine-tuned on 10,675 chest X-rays from the Kaggle SIIM-ACR Pneumothorax dataset, the model achieved an <b>AUROC of 0.938</b> on the official test set (n = 1,372), with <b>86.2% sensitivity</b> and <b>86.1% specificity</b>.
+                </p>
+                <p><i>Technical summary: from misleading baseline metrics to client-side web deployment.</i></p>
+
+                <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+
+                  <!-- 1. Project Overview -->
+                  <div class="accordion-item" data-aos="fade-up">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-1" aria-expanded="true" aria-controls="portfolio-details-collapse-1">
+                        <i class="bi bi-clipboard-data me-2"></i> Project Overview
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>This article summarizes the technical journey behind the results: from initial runs that looked "80% accurate" without actually learning, to a browser-based web app running the model locally.</p>
+
+                        <p><b>What Is Pneumothorax?</b></p>
+                        <p><b>Pneumothorax</b> is the presence of air in the pleural cavity, causing the lung to collapse partially or completely. On a chest X-ray, the key sign is a thin visceral pleural line with an area lacking lung markings beyond it. Small pneumothoraces, especially at the lung apex or on supine anteroposterior (AP) views, are easily missed, even though tension pneumothorax can be life-threatening. Automated detection is therefore valuable as a triage tool to flag scans that need priority review.</p>
+
+                        <p><b>Why ResNet50?</b></p>
+                        <p><b>ResNet50</b> is a 50-layer convolutional neural network built on residual connections: shortcut paths that add a block's input to its output. This prevents vanishing gradients and allows deep networks to be trained effectively. With roughly 23.5 million parameters and widely available ImageNet pretrained weights, ResNet50 is a standard baseline for transfer learning in medical imaging.</p>
+
+                        <div class="p-3 my-3 rounded" style="border-left: 4px solid var(--accent-color); background-color: color-mix(in srgb, var(--accent-color), transparent 92%);">
+                          <p class="mb-0"><b>Key Takeaway:</b> Is ResNet50 sufficient for detecting pneumothorax? <b>Yes.</b> Performance differences across architectures on a dataset the size of SIIM are typically just a few AUROC points. The major breakthroughs in this project came from improving the data pipeline, evaluation metrics, and training strategy rather than switching architectures.</p>
+                        </div>
+
+                        <p><b>Dataset</b></p>
+                        <p>The project uses the PNG version of the SIIM-ACR Pneumothorax dataset on Kaggle (vbookshelf). Each image measures 1024×1024 pixels and includes a pneumothorax segmentation mask. The train/test split follows the official Stage-1 list:</p>
+                        <div class="table-responsive">
+                          <table class="table table-sm table-bordered align-middle small">
+                            <thead class="table-light">
+                              <tr>
+                                <th>Split</th>
+                                <th class="text-end">Total</th>
+                                <th class="text-end">Normal</th>
+                                <th class="text-end">Pneumothorax</th>
+                                <th class="text-end">Positive</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr><td>Train</td><td class="text-end">8,540</td><td class="text-end">6,637</td><td class="text-end">1,903</td><td class="text-end">22%</td></tr>
+                              <tr><td>Validation (20% stratified from train)</td><td class="text-end">2,135</td><td class="text-end">1,659</td><td class="text-end">476</td><td class="text-end">22%</td></tr>
+                              <tr><td>Official Stage-1 Test</td><td class="text-end">1,372</td><td class="text-end">1,082</td><td class="text-end">290</td><td class="text-end">21%</td></tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <p><b>Workflow</b></p>
+                        <p>• <b>1. Data:</b> Download PNGs (1024×1024) and CSV metadata via the Kaggle API.</p>
+                        <p>• <b>2. Preprocessing:</b> Resize images to 512×512, cache locally, and apply training augmentations.</p>
+                        <p>• <b>3. Fine-Tune ResNet50:</b> Train with weighted cross-entropy, the AdamW optimizer, and learning rates of 1e-4 (backbone) / 1e-3 (head).</p>
+                        <p>• <b>4. Select Checkpoint:</b> Pick the checkpoint with the highest validation AUROC (Epoch 6: 0.937).</p>
+                        <p>• <b>5. Thresholding:</b> Determine the optimal decision threshold via Youden's index on the validation set (0.315).</p>
+                        <p>• <b>6. Test Evaluation:</b> Evaluate once on the official test set (n = 1,372, AUROC 0.938).</p>
+                        <p>• <b>7. ONNX Export:</b> Export the model (~94 MB) outputting probabilities plus 16×16 Class Activation Maps (CAM).</p>
+                        <p>• <b>8. Static Space Deployment:</b> Run directly in the browser for free using ONNX Runtime Web.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2. The Challenge -->
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-2" aria-expanded="false" aria-controls="portfolio-details-collapse-2">
+                        <i class="bi bi-exclamation-diamond me-2"></i> The Challenge
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-2" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>The biggest hurdles were not architectural, but silent pitfalls that made the model appear to work when it was not learning. Early experiments plateaued at 67% and later 80% accuracy, and both numbers were misleading. The root causes:</p>
+                        <p><b>1. Misleading Accuracy:</b> About 79% of test images are normal, so predicting "normal" every time yields ~79% accuracy. An early 80% accuracy (test loss 0.48) was no better than guessing class proportions.</p>
+                        <p><b>2. Class Imbalance:</b> With only 22% positive cases, standard loss and label smoothing pushed predictions toward the majority class.</p>
+                        <p><b>3. Underfitting:</b> Training accuracy stalled at 0.848 (ResNet50 should reach ~100% on training data) due to a low backbone learning rate (1e-5 for 3 epochs) and heavy L2 weight decay (1e-2) in Adam.</p>
+                        <p><b>4. Low Resolution:</b> The visceral pleural line is razor-thin and disappears when downsampled to ResNet's default 224×224 resolution.</p>
+                        <p><b>5. Overfitting:</b> Early runs lacked data augmentation. Even after fixes, val_loss hit its minimum at Epoch 2 and climbed to 0.806 by Epoch 11 while train_loss dropped to 0.037.</p>
+                        <p><b>6. Slow Data Pipeline:</b> Re-opening H5 files per image (0.71 it/s) and decoding 1024×1024 PNGs on a 2-core Colab CPU bottlenecked training.</p>
+                        <p><b>7. Chest Tube Shortcuts:</b> Some positive SIIM cases already contain chest tubes, risking a model that detects tubes rather than pneumothorax.</p>
+                        <p><b>8. Paid Deployment:</b> Hugging Face blocked free CPU Gradio Spaces (Error 402), requiring a PRO subscription.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 3. The Solution -->
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-3" aria-expanded="false" aria-controls="portfolio-details-collapse-3">
+                        <i class="bi bi-award me-2"></i> The Solution
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-3" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>Solutions were applied in a strict order: first make sure the model actually learns, then address generalization and deployment.</p>
+                        <p>• <b>Misleading Accuracy:</b> Replaced accuracy with AUROC, sensitivity, and specificity. Checkpoint selection and early stopping monitored val_auc instead of val_loss or accuracy.</p>
+                        <p>• <b>Class Imbalance:</b> Used balanced class-weighted cross-entropy (normal: 0.643; pneumothorax: 2.244), removed label smoothing, used stratified splits, and tuned the threshold on validation data.</p>
+                        <p>• <b>Underfitting:</b> Switched to AdamW (decoupled weight decay), increased learning rates (1e-4 backbone, 1e-3 head) with a cosine schedule, and trained for up to 20 epochs.</p>
+                        <p>• <b>Low Resolution:</b> Increased input resolution to 512×512 from the original 1024×1024 images.</p>
+                        <p>• <b>Overfitting:</b> Added training-only augmentations (±10° rotation, 5% translation, 0.9–1.1× scale, ±20% brightness/contrast), 0.3 dropout, and early stopping (patience = 5).</p>
+                        <p>• <b>Slow Data Pipeline:</b> Switched to direct PNG reads via CSV, pre-resized and cached images at 512×512 for parallel loading, and downloaded data via the Kaggle API directly to Colab's local disk.</p>
+                        <p>• <b>Chest Tube Shortcuts:</b> Unresolved; a subgroup analysis (with vs. without chest tubes) supported by CAM heatmaps is planned.</p>
+                        <p>• <b>Paid Deployment:</b> Exported the model to ONNX and deployed it client-side in the browser using ONNX Runtime Web on a free Static Space.</p>
+
+                        <p><b>Tuning the Threshold Without Retraining</b></p>
+                        <p>While AUROC is threshold-independent, sensitivity and specificity depend heavily on the cutoff. The default 0.5 threshold is arbitrary and tends to produce low sensitivity on imbalanced datasets. Using <b>Youden's index</b> (sensitivity + specificity − 1) on the validation set yielded an optimal threshold of <b>0.315</b>, which was then applied once to the test set to keep the evaluation unbiased.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 4. Results & Limitations -->
+                  <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-4" aria-expanded="false" aria-controls="portfolio-details-collapse-4">
+                        <i class="bi bi-graph-up-arrow me-2"></i> Results &amp; Limitations
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-4" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>The best checkpoint (<b>Epoch 6</b>, validation AUROC 0.937) achieved a <b>test AUROC of 0.938</b> (n = 1,372; 290 pneumothorax cases; 21% prevalence). The close match between validation and test scores shows the model generalizes well rather than overfitting to the validation split.</p>
+                        <div class="table-responsive">
+                          <table class="table table-sm table-bordered align-middle small">
+                            <thead class="table-light">
+                              <tr>
+                                <th>Threshold</th>
+                                <th class="text-end">Sens.</th>
+                                <th class="text-end">Spec.</th>
+                                <th class="text-end">PPV</th>
+                                <th class="text-end">NPV</th>
+                                <th class="text-end">Acc.</th>
+                                <th class="text-end">TP / FN / FP / TN</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr><td>0.500</td><td class="text-end">82.4%</td><td class="text-end">88.8%</td><td class="text-end">66.4%</td><td class="text-end">95.0%</td><td class="text-end">87.5%</td><td class="text-end text-nowrap">239 / 51 / 121 / 961</td></tr>
+                              <tr><td>0.315 (Youden, val)</td><td class="text-end">86.2%</td><td class="text-end">86.1%</td><td class="text-end">62.5%</td><td class="text-end">95.9%</td><td class="text-end">86.2%</td><td class="text-end text-nowrap">250 / 40 / 150 / 932</td></tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p>Lowering the threshold to 0.315 detects <b>11 additional positive cases</b> at the cost of <b>29 extra false alarms</b>, a favorable trade-off for clinical triage.</p>
+
+                        <p><b>Limitations</b></p>
+                        <p>• <b>Probability Calibration:</b> After Epoch 2, validation loss increased even as validation AUROC held steady at 0.93–0.94. This overfitting degrades calibration rather than discrimination: the model becomes overconfident, so predicted percentages do not reflect true probabilities. Temperature scaling on the validation set can fix this without affecting AUROC.</p>
+                        <p>• <b>Chest Tube Confounding:</b> The exact impact of chest tubes on AUROC has not yet been quantified.</p>
+                        <p>• <b>Patient-Level Leakage:</b> The PNG dataset lacks patient IDs, so potential patient overlap between train and test splits could not be verified.</p>
+                        <p>• <b>External Validation:</b> The model has not been tested on local hospital data with different imaging protocols and patient demographics.</p>
+                        <p>• <b>Aspect Ratio Distortion:</b> Images were resized directly to 512×512 without preserving aspect ratios, causing slight distortion on non-square X-rays.</p>
+                        <p>• <b>Not a Diagnostic Tool:</b> This model is intended strictly for research and educational purposes.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="bi bi-stars"></i> Key Features</h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <ul class="feature-list">
+                      <li><i class="bi bi-check2-circle"></i> Test AUROC 0.938 (n = 1,372)</li>
+                      <li><i class="bi bi-check2-circle"></i> 86.2% Sensitivity, 86.1% Specificity</li>
+                      <li><i class="bi bi-check2-circle"></i> High-Resolution 512×512 Input</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="feature-list">
+                      <li><i class="bi bi-check2-circle"></i> CAM Heatmap Visualization</li>
+                      <li><i class="bi bi-check2-circle"></i> In-Browser Inference (ONNX Runtime Web)</li>
+                      <li><i class="bi bi-check2-circle"></i> Free Static Deployment</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://huggingface.co/spaces/Yabunayya/deteksi-pneumotoraks" target="_blank" class="btn-view-project">View Live Project</a>
+                <a href="#" class="btn-next-project">Next Project <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/YabunayyaH"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1A33Qwk4ka/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/yabunayyah?xtok=MTJna3o3bm93enB0Mg=="><i class="bi bi-instagram"></i></a>
+        <a href="ttps://www.linkedin.com/in/yabunayya-habibi-086b30115/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
